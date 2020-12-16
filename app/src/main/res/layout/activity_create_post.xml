@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreatePostActivity">
+    <include
+        android:id="@+id/create_post_toolbar"
+        layout="@layout/app_bar_layout"
+        ></include>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/create_post_image"
+        android:src="@drawable/new_post_image"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_post_caption"
+        android:hint="Announcement.."
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_post_button"
+        android:text="Create"
+        android:textColor="@color/colorN"
+        android:background="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:textSize="20sp"/>
+</LinearLayout>

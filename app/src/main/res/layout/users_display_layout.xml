@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linear_upper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/users_profile_image"
+            android:src="@drawable/profile_image"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/user_profile_name"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:layout_marginLeft="5dp"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/track_req_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00/00/0000"
+                    android:layout_marginLeft="4dp"
+                    android:textAlignment="textStart" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/req_type"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Request Type"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/track_req_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="-- -- ----"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left">
+
+                <Button
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/talk_btn"
+                    android:text="Talk"
+                    android:textColor="@color/colorN"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:background="@color/colorPrimary"
+                    android:visibility="invisible"/>
+                <Button
+                    android:layout_width="95dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/response_request_or_add_or_remove_btn"
+                    android:text="Response"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorN"
+                    android:textAllCaps="false"
+                    android:background="@color/colorPrimary"
+                    android:visibility="invisible"/>
+                <Button
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/track_btn"
+                    android:text="Track"
+                    android:textColor="@color/colorN"
+                    android:textSize="16sp"
+                    android:textAllCaps="false"
+                    android:background="@color/colorPrimary"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="2dp"
+                android:background="@color/colorPrimary">
+
+            </LinearLayout>
+
+            <!--<ImageView-->
+                <!--android:layout_below="@+id/linear_upper"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="7dp"-->
+                <!--android:id="@+id/line"-->
+                <!--android:src="@drawable/red_horizontal_line" />-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

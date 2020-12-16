@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/circle_create_post"
+        android:title="New Announcement"/>
+    <item android:id="@+id/circle_talk"
+        android:title="Live Chat"/>
+    <item android:id="@+id/circle_member_list"
+        android:title="Members List"/>
+    <item android:id="@+id/circle_add_member"
+        android:title="Add Members"/>
+    <item android:id="@+id/leave_circle"
+        android:title="Leave Circle"/>
+    <!--<item android:id="@+id/circle_delete"-->
+        <!--android:title="Delete Circle"/>-->
+</menu>

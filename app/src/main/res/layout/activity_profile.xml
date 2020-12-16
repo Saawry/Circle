@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+    <include
+        android:id="@+id/friends_profile_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+
+    <ScrollView
+        android:layout_marginTop="?actionBarSize"
+        android:background="@drawable/lay_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="140dp"
+                android:layout_height="167dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/app_circle_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="MissingConstraints" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+                android:id="@+id/visit_profile_image"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/profile_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/visit_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/visit_profile_image"
+                android:layout_marginTop="10dp"
+                android:text="user name"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/visit_profile_image"
+                tools:layout_editor_absoluteX="25dp" />
+
+            <TextView
+                android:id="@+id/visit_profile_status"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_below="@+id/visit_user_name"
+                android:layout_marginTop="5dp"
+                android:text="Hey, Get Touched Within Circle"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/visit_user_name"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/send_message_request_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/visit_profile_status"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:text="Add Request"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/visit_profile_status"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/decline_message_request_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/send_message_request_button"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:text="Reject"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintTop_toBottomOf="@+id/send_message_request_button"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>

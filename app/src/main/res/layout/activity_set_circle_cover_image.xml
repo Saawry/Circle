@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetCircleCoverImageActivity">
+    <include
+        android:id="@+id/setCover_image_toolbar"
+        layout="@layout/app_bar_layout"
+        ></include>
+    <ImageView
+        android:src="@drawable/new_post_image"
+        android:id="@+id/CoverImage"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+    <Button
+        android:id="@+id/setCoverImageBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorN"
+        android:background="@color/colorPrimary"/>
+</LinearLayout>

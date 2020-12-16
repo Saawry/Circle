@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1033804550828",
+    "firebase_url": "https://circle-20aa6.firebaseio.com",
+    "project_id": "circle-20aa6",
+    "storage_bucket": "circle-20aa6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033804550828:android:dc354725a5964e95",
+        "android_client_info": {
+          "package_name": "com.example.circle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1033804550828-et8qbbjr79eqb1avep7t48f1vpgdb012.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.circle",
+            "certificate_hash": "34df25274ca7b960b901ff9548772243841f877f"
+          }
+        },
+        {
+          "client_id": "1033804550828-6pece3oive9uivi0ae6gpmqifbauf3vf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvlqaJHXrLN-EcGPAMTgH5iZUOiPqDTr4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1033804550828-6pece3oive9uivi0ae6gpmqifbauf3vf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

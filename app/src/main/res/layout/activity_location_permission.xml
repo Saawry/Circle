@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_google_map"
+    tools:context=".LocationPermissionActivity">
+
+    <include
+        android:id="@+id/location_permission_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location Update Time: "
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@color/colorN"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            android:id="@+id/user_loc_update_time"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location:"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@color/colorN"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            android:id="@+id/user_loc_lat_lng"/>
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/show_user_location_on_map_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Show Location on Map"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorN"
+            android:visibility="invisible"/>
+    </LinearLayout>
+</LinearLayout>

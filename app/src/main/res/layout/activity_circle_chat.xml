@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CircleChatActivity">
+
+
+    <include
+        android:id="@+id/circle_chat_bar_layout"
+        layout="@layout/app_bar_layout">
+
+    </include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circle_chat_bar_layout"
+        android:id="@+id/my_scroll_view"
+        android:layout_above="@+id/myLinearLayout"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation= "vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding ="10dp"
+                android:id="@+id/circle_chat_text_display"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@android:color/background_dark"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="65dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/myLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_circle_message"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:hint="Type Message"
+            android:padding="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/circle_send_message_button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/circle_send_message_button"
+            android:layout_width="0dp"
+            android:layout_height="51dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/send_message"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="4dp"
+            tools:ignore="MissingConstraints" />
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_google_map"
+    tools:context=".MyLocActivity">
+
+    <include
+        android:id="@+id/get_my_location_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:textColor="@color/colorN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/get_loc_btn"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@color/colorPrimary"
+            android:text="Get My Location"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location:"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@color/colorN"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            android:id="@+id/my_loc_lat_lng"/>
+        <Button
+            android:textColor="@color/colorN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_my_location_on_map_btn"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@color/colorPrimary"
+            android:visibility="invisible"
+            android:text="Show on Map"/>
+    </LinearLayout>
+</LinearLayout>

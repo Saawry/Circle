@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lay_back"
+    tools:context=".SettingsActivity">
+
+    <include
+        android:id="@+id/my_profile_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+    <ScrollView
+        android:layout_below="@+id/my_profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/app_circle_icon"
+                app:layout_constraintBottom_toTopOf="@+id/set_profile_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_chainStyle="spread_inside"
+                tools:ignore="MissingConstraints" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/set_profile_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/profile_image"
+
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/set_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/set_profile_image"
+                android:layout_marginTop="2dp"
+                android:hint="Permanent User Name"
+                android:inputType="textMultiLine"
+                android:padding="6dp"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/set_profile_image"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/user_name_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_below="@+id/set_user_name"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintTop_toBottomOf="@+id/set_user_name"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <TextView
+                android:id="@+id/user_identifier_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_name_display"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                android:visibility="invisible"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/user_name_display"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <EditText
+                android:id="@+id/set_profile_status"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_below="@+id/user_identifier_display"
+                android:layout_marginTop="2dp"
+                android:hint="Bio.."
+                android:inputType="textMultiLine"
+                android:padding="6dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/user_identifier_display"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/update_setting_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/set_profile_status"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorPrimary"
+                android:inputType="textMultiLine"
+                android:padding="6dp"
+                android:text="Update"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/set_profile_status"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/delete_account_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/update_setting_button"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorPrimary"
+                android:inputType="textMultiLine"
+                android:padding="6dp"
+                android:text="Delete Account"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintTop_toBottomOf="@+id/update_setting_button"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</RelativeLayout>

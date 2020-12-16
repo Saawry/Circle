@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Profile"
+        android:id="@+id/main_profile_set_option"
+        app:showAsAction="never">
+
+    </item>
+
+    <item
+        android:title="Find People"
+        android:id="@+id/main_find_people_option"
+        app:showAsAction="never">
+
+    </item>
+    <item
+        android:title="Create Circle"
+        android:id="@+id/main_create_circle_option"
+        app:showAsAction="never">
+
+    </item>
+
+    <item
+        android:title="My Location"
+        android:id="@+id/main_my_location_option"
+        app:showAsAction="never">
+
+    </item>
+
+    <item
+        android:title="Logout"
+        android:id="@+id/main_logout_option"
+        app:showAsAction="never">
+
+    </item>
+</menu>

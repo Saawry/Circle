@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <include
+        android:id="@+id/register_toolbar"
+        layout="@layout/app_bar_layout">
+    </include>
+
+    <ScrollView
+        android:layout_marginTop="?actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/lay_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="25dp"
+                android:layout_width="200dp"
+                android:src="@drawable/app_circle_icon"
+                android:layout_height="200dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/register_email"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/app_logo"
+                android:hint="Email"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="25dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/register_password"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/register_email"
+                android:hint="Password"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/register_password"
+                android:layout_marginTop="10dp"
+                android:text="Create Account"
+                android:background="@color/colorPrimary"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="@android:color/background_light"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/orf"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/register_button"
+                android:text="or"
+                android:hint="Password"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="23dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/already_have_an_account_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orf"
+                android:text="Login"
+                android:background="@color/colorPrimary"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="@android:color/background_light"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ors"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/already_have_an_account_btn"
+                android:text="or"
+                android:hint="Password"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="23dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/phn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ors"
+                android:text="Phone Login"
+                android:background="@color/colorPrimary"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="@android:color/background_light"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
