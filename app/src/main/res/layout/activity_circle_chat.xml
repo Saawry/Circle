@@ -42,7 +42,7 @@
 
     </ScrollView>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/myLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,6 +72,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             tools:layout_editor_absoluteY="4dp"
             tools:ignore="MissingConstraints" />
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </RelativeLayout>

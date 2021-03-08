@@ -9,7 +9,7 @@
         android:id="@+id/circle_add_member_bar_layout"
         layout="@layout/app_bar_layout" />
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/circle_add_member_bar_layout"
